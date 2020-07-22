@@ -17,7 +17,7 @@ h1 {
 font-family: Helvetica; 
 font-style: normal;
 font-weight: bold;
-font-size: 80px;
+font-size: 40px;
 color: #0A2338;
 text-align: left;
 }
@@ -27,7 +27,7 @@ h2 {
 font-family: Helvetica;
 font-style: normal;
 font-weight: bold;
-font-size: 48px;
+font-size: 30px;
 line-height: 140%;
 }
 
@@ -36,7 +36,7 @@ h3{
 font-family: Rubik;
 font-style: normal;
 font-weight: bold;
-font-size: 16px;
+font-size: 20px;
 line-height: 40px;
 letter-spacing: 0.1em;
 
@@ -47,7 +47,7 @@ h4 {
 font-family: Avenir;
 font-style: normal;
 font-weight: 500;
-font-size: 18px;
+font-size: 15px;
 line-height: 160%;
 }
 
@@ -56,7 +56,7 @@ h5 {
 font-family: Helvetica;
 font-style: normal;
 font-weight: normal;
-font-size: 16px;
+font-size: 8px;
 line-height: 140%;
 color: #212353;
 }
@@ -66,7 +66,7 @@ h6 {
 font-family: Helvetica;
 font-style: normal;
 font-weight: normal;
-font-size: 18.99px;
+font-size: 7.5px;
 line-height: 180%;
 letter-spacing: 0.01em;
 }
@@ -76,7 +76,7 @@ p {
 font-family: Avenir;
 font-style: normal;
 font-weight: normal;
-font-size: 10.8866px;
+font-size: 13px;
 line-height: 160%;
 color: #4B5D68;
 }
@@ -99,6 +99,30 @@ color: #4B5D68;
   border-radius: 30px;
 }
 
+.button:hover {
+  opacity: 0.6
+}
+
+.nav_button {
+  background-color: none;
+  border: none;
+  color: black;
+  font-style: normal;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  /*font-size: 5px;*/
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 30px;
+}
+
+.nav_button:hover {
+  background-color: #E68976;
+  color: white;
+}
+
 /* nav bar button */
 .joinbutton {
   background-color:#E57154;
@@ -115,14 +139,18 @@ color: #4B5D68;
   border-radius: 5px;
 }
 
+.joinbutton:hover {opacity: 0.6}
+
 /* nav bar layout */
-.topnav {
+#topnav {
   overflow: hidden;
+  background-color: rgba(244, 244, 244, 0.8);
+  z-index: 20;
  
 }
 
 /* nav bar links*/
-.topnav a {
+#topnav a {
   float: left;
   color: #000000;
   text-align: center;
@@ -132,13 +160,13 @@ color: #4B5D68;
 }
 
 /* nav bar hover colour (possibly change) */
-.topnav a:hover {
+#topnav a:hover {
   
   color: black;
 }
 
 /* nav bar active page colour (possibly change) */
-.topnav a.active {
+#topnav a.active {
   
   color: black;
 }
@@ -148,11 +176,78 @@ color: #4B5D68;
   float: right;
 }
 
+/* sticky nav bar */
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 65%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
 /* table spacing */
 #objectives td, #objectives th {
-  padding-left: 100px;
-   padding-right: 100px;
+  padding-left: 50px;
+   padding-right: 50px;
 }
+
+/* community assets */
+.container_community {
+  position: relative;
+  text-align: center;
+
+}
+
+/* centered text over community asset */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Carousel card */
+.container_card {
+  transition: 0.3s;
+  position: relative;
+  width: 50%;
+  box-shadow: #E68976;
+  background-color: #FFFFFF;
+}
+
+/* SheHacks banner container */
+.she_container {
+  position: relative;
+  width: 100%;
+}
+
+/* Make the image responsive */
+.she_container img {
+  width: 100%;
+  height: auto;
+}
+
+/* SheHacks banner button */
+.she_container .she_btn {
+  position: absolute;
+  bottom: 10%;
+  left: 28%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: rgba(244, 244, 244, 0);
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
 
 
 
