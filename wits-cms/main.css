@@ -1,0 +1,317 @@
+/* page layout */
+body {
+  font-family: Rubik;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  background: white;
+  
+  }
+  
+  
+  /* landing page title */
+  h1 {
+  font-family: Helvetica; 
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  color: #0A2338;
+  text-align: left;
+  }
+  
+  /* main headings */
+  h2 {
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 140%;
+  }
+  
+  /* subheadings - events, navbar, etc*/
+  h3{
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 40px;
+  letter-spacing: 0.1em;
+  
+  }
+  
+  /* subheadings - join our community*/
+  h4 {
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 160%;
+  }
+  
+  /* smaller subheadings - Creating pipelines, empowering women */
+  h5 {
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 8px;
+  line-height: 140%;
+  color: #212353;
+  }
+  
+  /* footer text */
+  h6 {
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 7.5px;
+  line-height: 180%;
+  letter-spacing: 0.01em;
+  }
+  
+  /* paragraph text */
+  p {
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 160%;
+  color: #4B5D68;
+  }
+  
+  
+  /* membership button */
+  .button {
+    background-color: #E68976;
+    border: none;
+    color: white;
+    font-family: Avenir;
+    font-style: normal;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 30px;
+  }
+  
+  .button:hover {
+    opacity: 0.6
+  }
+  
+  .nav_button {
+    background-color: none;
+    border: none;
+    color: black;
+    font-style: normal;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    /*font-size: 5px;*/
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 30px;
+  }
+  
+  .nav_button:hover {
+    background-color: #E68976;
+    color: white;
+  }
+  
+  /* nav bar button */
+  .joinbutton {
+    background-color:#E57154;
+    border: none;
+    color: white;
+    font-style: normal;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 0px 0px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .joinbutton:hover {opacity: 0.6}
+  
+  /* nav bar layout */
+  #topnav {
+    overflow: hidden;
+    background-color:#F1EFE2;
+    z-index: 20;
+    padding-top: 27px;
+  }
+  
+  /* nav bar links*/
+  #topnav a {
+    float: left;
+    color: #000000;
+    text-align: center;
+    padding: 14px 30px;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  /* nav bar hover colour (possibly change) */
+  #topnav a:hover {
+    
+    color: black;
+  }
+  
+  /* nav bar active page colour (possibly change) */
+  #topnav a.active {
+    
+    color: black;
+  }
+  
+  /* nav bar layout*/
+  .topnav-right {
+    float: right;
+  }
+  
+  /* sticky nav bar */
+  .content {
+    padding: 16px;
+  }
+  
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 65%;
+  }
+  
+  .sticky + .content {
+    padding-top: 60px;
+  }
+  
+  /* table spacing */
+  #objectives td, #objectives th {
+    padding-left: 50px;
+     padding-right: 50px;
+  }
+  
+  /* community assets */
+  .container_community {
+    position: relative;
+    text-align: center;
+  
+  }
+  
+  /* centered text over community asset */
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  /* Carousel card */
+  .container_card {
+    transition: 0.3s;
+    position: relative;
+    width: 50%;
+    box-shadow: #E68976;
+    background-color: #FFFFFF;
+  }
+  
+  /* SheHacks banner container */
+  .she_container {
+    position: relative;
+    width: 100%;
+  }
+  
+  /* Make the image responsive */
+  .she_container img {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* SheHacks banner button */
+  .she_container .she_btn {
+    position: absolute;
+    bottom: 10%;
+    left: 28%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: rgba(244, 244, 244, 0);
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .header{
+    background-color: #F1EFE2;
+    font-family: Helvetica;
+    color: #0A2338;
+  }
+  
+  .sidebar, .sidebar a{
+    background-color: #0A2338;
+    font-family: Helvetica;
+    color: lightgrey;
+    position: fixed;
+    height: 100%;
+  }
+  
+  .block-container{
+    padding: 3%;
+    font-family: Helvetica;
+    color: #0A2338;
+  }
+  
+  .thead-dark{
+    background-color: #0A2338;
+    color: white;
+    font-family: Helvetica;
+    padding:5px;
+  }
+  
+  .tbody-light{
+    background-color: #F1EFE2;
+    color:black;
+  }
+  
+  .add-button, input[type=submit]{
+    background-color:#0A2338;
+    border: none;
+    color: white;
+    font-family:Helvetica;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    text-align: center;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 600;
+    margin: 0px 0px;
+    cursor: pointer;
+    border-radius: 25px;
+  }
+  
+  .add-button:hover, input[type=submit]:hover {
+    opacity: 0.6;  
+    color:white;
+    text-decoration: none;
+  }
+
+  input[type=text], input[type=password]{
+    padding:10px;
+    width: 100%;
+  }
+
+  .my-custom-scrollbar {
+    position: relative;
+    height: 350px;
+    overflow: auto;
+  }
+  .table-wrapper-scroll-y {
+  display: block;
+  }
+
