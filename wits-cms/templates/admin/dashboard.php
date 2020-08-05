@@ -85,7 +85,7 @@
                                 <?php echo date('j M Y', $event->eventDate)?>
                                 </td>
                                 <td>
-                                <?php echo date('H:i', $event->eventTime)?>
+                                <?php echo date('g:i A', strtotime($event->eventTime)) . " EST"?>
                                 </td>
                                 <td>
                                 <?php echo $event->eventLocation?>

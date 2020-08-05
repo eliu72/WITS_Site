@@ -118,6 +118,17 @@
 
               <div class="row mx-auto">
                 <div class="col-2 my-auto">
+                <label for="eventDateTime">Event Date Time</label>
+                </div>
+                <div class="col-7">
+                <input type="datetime-local" name="eventDateTime" id="eventDateTime" required maxlength="10" value="<?php echo htmlspecialchars( $results['event']->eventDateTime ? date( "Y-m-d H:i:s", $results['event']->eventDateTime ) : "") ?>" />
+                <?php echo htmlspecialchars( $results['event']->eventDateTime )?>
+                </div>
+              </div>
+              <br>
+
+              <div class="row mx-auto">
+                <div class="col-2 my-auto">
                 <label for="eventLocation">Event Location</label>
                 </div>
                 <div class="col-7">

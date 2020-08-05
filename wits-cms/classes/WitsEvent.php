@@ -71,7 +71,7 @@ class WitsEvent
     if ( isset( $data['eventType'] ) ) $this->eventType = /*preg_replace ( "/[^\.\,\-\_\'\"\@\?\!\:\$ a-zA-Z0-9()]/", "",*/ $data['eventType'] /*)*/;
     if ( isset( $data['summary'] ) ) $this->summary = /*preg_replace ( "/[^\.\,\-\_\'\"\@\?\!\:\$ a-zA-Z0-9()]/", "",*/ $data['summary'] /*)*/;
     if ( isset( $data['eventDate'] ) ) $this->eventDate = (int) $data['eventDate'];
-    if ( isset( $data['eventTime'] ) ) $this->eventTime = (int) $data['eventTime'];
+    if ( isset( $data['eventTime'] ) ) $this->eventTime =  $data['eventTime'];
     if ( isset( $data['eventLocation'] ) ) $this->eventLocation = /*preg_replace ( "/[^\.\,\-\_\'\"\@\?\!\:\$ a-zA-Z0-9()]/", "",*/ $data['eventLocation'] /*)*/;
     if ( isset( $data['eventLink'] ) ) $this->eventLink = /*preg_replace ( "/[^\.\,\-\_\'\"\@\?\!\:\$ a-zA-Z0-9()]/", "",*/ $data['eventLink'] /*)*/;
     if ( isset( $data['author'] ) ) $this->author = $data['author'];
@@ -106,6 +106,7 @@ class WitsEvent
         list ( $H, $i ) = $eventTime;
         $this->eventTime = mkTime ( $H, $i, 0, 0, 0, 0 );
     }
+
   }
 
   /**

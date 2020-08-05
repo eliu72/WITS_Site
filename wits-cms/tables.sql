@@ -13,16 +13,16 @@ CREATE TABLE incentives
 DROP TABLE IF EXISTS witsEvents;
 CREATE TABLE witsEvents
 (
-  id              smallint unsigned NOT NULL auto_increment,
-  title           varchar(255) NOT NULL,                      # Full title of the article
-  eventType			varchar(255) NOT NULL,
-  summary         text NOT NULL,                              # A short summary of the article
-  eventDate		  date NOT NULL,							  # When the event is happening
-  eventTime		  time NOT NULL, 							  # Time of the event
+	id              smallint unsigned NOT NULL auto_increment,
+	title           varchar(255) NOT NULL,                      # Full title of the article
+	eventType			varchar(255) NOT NULL,
+	summary         text NOT NULL,                              # A short summary of the article
+	eventDate		  date NOT NULL,							  # When the event is happening
+	eventTime		  time NOT NULL, 							  # Time of the event
     eventLocation		varchar(255) NOT NULL,
-eventLink 		varchar(255) NOT NULL,
-  author		  varchar(255) NOT NULL,                      # Published by
-  imageExtension 	text NOT NULL,							  # File path to the image
+	eventLink 		varchar(255) NOT NULL,
+	author		  varchar(255) NOT NULL,                      # Published by
+	imageExtension 	text NOT NULL,							  # File path to the image
   
   PRIMARY KEY     (id)
 );
