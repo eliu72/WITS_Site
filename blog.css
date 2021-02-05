@@ -1,0 +1,307 @@
+body {
+	margin: 0;
+	display: grid;
+	height: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+@media (max-width: 568px){
+	.mobileimg{
+		width: 90%;
+	}
+}
+
+
+
+@media (max-width: 568px){
+	.footerimg{
+		width: 50%;
+	}
+}
+
+@media (max-width: 568px){
+	.mobilefont{
+		font-size: 1.3em; 
+	}
+}
+
+@media (max-width:991px){
+    .reverse-col{
+       flex-direction:column-reverse;
+       padding:5%;
+   }
+}
+
+
+:root {
+	--mainColor: #e69f91;
+  }
+  
+.buttonHover {
+	background:
+		linear-gradient(
+			to bottom, var(--mainColor) 0%,
+			var(--mainColor) 100%
+		);
+	background-position: 0 100%;
+	background-repeat: repeat-x;
+	background-size: 4px 4px;
+	color: #000;
+	text-decoration: none;
+	transition: background-size .6s;
+}
+  
+.buttonHover:hover {
+	background-size: 4px 50px;
+	text-decoration: none;
+	color: #000;
+}
+
+img {
+	width: 100%;
+}
+
+
+
+/* center everything */
+.marginCenter{
+	padding-left: 15%;
+	padding-right: 15%;
+}
+
+/* make the top margin of each section 10% */
+.marginTop10{
+	margin-top: 10%;
+}
+
+/* make the top margin of each section 20% */
+.marginTop20{
+	margin-top: 20%;
+}
+
+/* make the top margin of each section 30% */
+.marginTop30{
+	margin-top: 30%;
+}
+
+
+/* heading font */
+h1{
+	color: #0A2338;
+	font-family: Helvetica;
+	font-style: normal;
+	font-weight: bold;
+
+	line-height: 110%;
+}
+
+/* subtitle font */
+h2 {
+	font-family: Helvetica;
+	font-style: normal;
+	font-weight: bold;
+	
+	line-height: 140%;
+	color: #402B2B;
+
+}
+
+/* subtitle accent font */
+h3{
+	font-family: Rubik;
+	font-style: normal;
+	font-weight: bold;
+
+	line-height: 40px;
+	color: #E57154;
+}
+
+/* body font */
+h4 {
+
+	font-family: Helvetica;
+	font-style: normal;
+	font-weight: 500;
+
+	line-height: 160%;
+	color: #0A2338;
+}
+
+h4:hover {
+
+	font-style: normal;
+	font-weight: 500;
+
+	line-height: 160%;
+	color: #4B5D68;
+	transition: 0.3s;
+}
+
+h6{
+    font-weight: 700;
+    font-family: "Nunito Sans";
+    font-size: 16px;
+    color: #0A2338;
+}
+
+
+p{
+    color: #0A2338;
+    font-weight: 400;
+    font-family: "Nunito Sans";
+    font-size: 16px;
+    color: #0A2338;
+}
+
+
+/*navbar*/
+nav {
+    z-index: 3000;
+}
+.navbar .nav-item .nav-link {
+    font-family: "Rubik";
+    font-weight: 600;
+    color: #0A2338;
+    transition: all 0.3s ease 0s;
+}
+.navbar .nav-item .nav-link:hover{
+    color: #E57154;
+}
+.nav-link.active {
+    color: #E57154 !important;
+  }
+.navbar-brand img {
+    width: 70px;
+}
+.navbar {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #F4D089;
+    padding: .5rem 1rem;
+}
+.navbar .join-button{
+    background-color:  #E57154;
+    box-sizing: border-box;
+	border-radius: 10px;
+	border: none;
+	padding: 10px 25px;
+    display: inline-block;
+    font-family: "Rubik";
+    font-weight: 600;
+    color:  white;
+}
+.navbar button:hover{
+	background-color:  #0A2338;
+	transition: all 0.3s ease 0s;
+}
+.navbar ul{
+    justify-content: flex-end; 
+    font-weight: 600;
+    color: white;
+}
+
+.landingbutton {
+	background-color: #E68976;
+	border: none;
+	color: white;
+	font-style: normal;
+	padding: 10px 30px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	border-radius: 50px;
+}
+
+.vertical-center{
+    display:flex;
+    align-items: center;
+}
+
+
+.spotifybutton {
+	background-color:#E68976;
+	border: none;
+	color: white;
+	font-style: normal;
+	padding:4% 9%;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	cursor: pointer;
+	border-radius: 50px;
+}
+
+.row-bottom-margin { 
+	margin-bottom: 20px; 
+}
+
+a{
+	color: #E68976;
+	text-decoration: none;
+}
+
+a:hover{
+	color: #edb4a8;
+	opacity: 0.5;
+	text-decoration: none;
+}
+
+/* landing page join us button hover color change*/
+.initbutton:hover{
+	background-color:  #e69f91;
+	transition: 0.3s;
+}
+
+
+/* links resting */
+#link{
+	text-decoration: none;
+	color: #0A2338;
+}
+
+/* links glow when hover */
+#link:hover{
+	
+	color: pink;
+}
+
+/* center table */
+table.center {
+  	margin-left:auto; 
+  	margin-right:auto;
+}
+/*footer*/
+.social-icon{
+    float:right; 
+    width: 50px;
+    height: 50px;
+    margin: 0 1%;
+}
+
+.social-icon:hover{
+    opacity: 0.5;
+    transition: all 0.3s ease;
+}
+
+.link{
+    color: #0A2338;
+}
+
+.link:hover{
+    color: #E57154;
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 768px){
+    .social-icon{
+        float: left;
+    }
+}
+
