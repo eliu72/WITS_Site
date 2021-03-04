@@ -1,4 +1,5 @@
 <?php include "templates/include/header.php" ?>
+
 <title>Blog & Podcast</title>
 	<link rel="stylesheet" type="text/css" href="blog.css">
 	<section style="background: #F4D089; padding-top: 12%; padding-bottom: 5%">
@@ -67,21 +68,9 @@
 			</div>
 			<div class="row">
 			
-				<div class="col">
-					<a href="https://medium.com/@wits.uwo/the-ultimate-survival-guide-to-social-distancing-e80419fd0329" target="_blank" ><img src="images/social.png" alt="blog pic"></a>
-					<h5 style="text-align: center; color:#0A2338"> The Ultimate Survival Guide to Social Distancing</h5>
-					
-				</div>
-				<div class="col">
-					<a href="https://medium.com/@wits.uwo/insurance-tech-how-telematics-and-fitness-devices-are-changing-the-industry-9a670caa7987"target="_blank" ><img src="images/insurance.png" alt="blog pic" ></a>	
-					<h5 style="text-align: center; color:#0A2338"> Insurance tech: How Telematics and Fitness Devices Are Changing The Industry</h5>
-					
-				</div>
-				<div class="col">
-					<a href="https://medium.com/@wits.uwo/googles-vp-of-ux-designing-your-own-future-3b5271e84b06"target="_blank" ><img src="images/googleux.png" alt="blog pic" ></a>	
-					<h5 style="text-align: center; color:#0A2338"> Google’s VP of UX: Designing your own Future</h5>
-					
-				</div>
+			<?php
+					include "classes/getBlogs.php"
+				?>
 				
 			</div>
 		</div>

@@ -1,15 +1,3 @@
-DROP TABLE IF EXISTS incentives;
-CREATE TABLE incentives
-(
-  id              smallint unsigned NOT NULL auto_increment,
-  title           varchar(255) NOT NULL,                      # Full title of the article
-  summary         text NOT NULL,                              # A short summary of the article
-  author		  varchar(255) NOT NULL,                      # Published by
-  imageExtension  varchar(255) NOT NULL,                      # The filename extension of the article's full-size and thumbnail images
-
-  PRIMARY KEY     (id)
-);
-
 DROP TABLE IF EXISTS witsEvents;
 CREATE TABLE witsEvents
 (
@@ -23,21 +11,6 @@ CREATE TABLE witsEvents
 	eventLink 		varchar(255) NOT NULL,
 	author		  varchar(255) NOT NULL,                      # Published by
 	imageExtension 	text NOT NULL,							  # File path to the image
-  
-  PRIMARY KEY     (id)
-);
-
-DROP TABLE IF EXISTS communityMembers;
-CREATE TABLE communityMembers
-(
-  id				smallint unsigned NOT NULL auto_increment,
-  person          	varchar(255) NOT NULL,                      # Full title of the article
-  title				varchar(255) NOT NULL,                    	# A short summary of the article
-  summary		  	text NOT NULL,						# When the event is happening
-url 				varchar(255) NOT NULL,
-
-  author		  	varchar(255) NOT NULL,                      # Published by
-  imageExtension			  	text NOT NULL,							  	# File path to the image
   
   PRIMARY KEY     (id)
 );
@@ -57,19 +30,6 @@ CREATE TABLE witsMembers
   PRIMARY KEY     (id)
 );
 
-DROP TABLE IF EXISTS testimonials;
-CREATE TABLE testimonials
-(
-  id				smallint unsigned NOT NULL auto_increment,
-  person          	varchar(255) NOT NULL,                      # Full title of the article
-  title				varchar(255) NOT NULL,                    	# A short summary of the article
-  summary		  	text NOT NULL,						# When the event is happening
-  author		  	varchar(255) NOT NULL,                      # Published by
-  imageExtension			  	text NOT NULL,							  	# File path to the image
-  
-  PRIMARY KEY     (id)
-);
-
 DROP TABLE IF EXISTS sponsors;
 CREATE TABLE sponsors
 (
@@ -79,17 +39,6 @@ CREATE TABLE sponsors
   url 				varchar(255) NOT NULL,
   author		  	varchar(255) NOT NULL,                      # Published by
   imageExtension	text NOT NULL,							  	# File path to the image
-  
-  PRIMARY KEY     (id)
-);
-
-DROP TABLE IF EXISTS texts;
-CREATE TABLE texts
-(
-  id				smallint unsigned NOT NULL auto_increment,
-  title				varchar(255) NOT NULL,                    	# A short summary of the article
-    summary				text NOT NULL,                    	# A short summary of the article
-	author		  	varchar(255) NOT NULL,                      # Published by
   
   PRIMARY KEY     (id)
 );
@@ -120,7 +69,6 @@ CREATE TABLE blogs
   PRIMARY KEY     (id)
 );
 
-
 DROP TABLE IF EXISTS alumni;
 CREATE TABLE alumni
 (
@@ -135,16 +83,27 @@ CREATE TABLE alumni
   PRIMARY KEY     (id)
 );
 
-DROP TABLE IF EXISTS mentors;
-CREATE TABLE mentors
+DROP TABLE IF EXISTS partners;
+CREATE TABLE partners
 (
   id				smallint unsigned NOT NULL auto_increment,
   person          	varchar(255) NOT NULL,                      # Full title of the article
+  company           varchar(255) NOT NULL,
   title				varchar(255) NOT NULL,                    	# A short summary of the article
   summary		  	text NOT NULL,						# When the event is happening
     url 				varchar(255) NOT NULL,
   author		  	varchar(255) NOT NULL,                      # Published by
   imageExtension			  	text NOT NULL,							  	# File path to the image
   
+  PRIMARY KEY     (id)
+);
+
+DROP TABLE IF EXISTS companies;
+CREATE TABLE companies
+(
+  id        smallint unsigned NOT NULL auto_increment,
+  name         varchar(255) NOT NULL,
+  url 				varchar(255) NOT NULL,
+  imageExtension			  	text NOT NULL,
   PRIMARY KEY     (id)
 );
